@@ -24,6 +24,8 @@ nav ul {
 .header {
   width: 100%;
   background-color: rgba(0, 0, 0, .2);
+  position: absolute;
+  z-index: 1;
 }
 
 .header ul {
@@ -134,7 +136,7 @@ input[type=checkbox] {
 } */
 
 .header {
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .90);
 }
 
 nav ul {
