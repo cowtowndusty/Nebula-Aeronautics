@@ -120,7 +120,7 @@ p {
   margin-top: 5.5rem;
 }
 
-/* google map */
+/* Google Map */
 
 .google-map {
   overflow:hidden;
@@ -143,6 +143,55 @@ p {
   padding-bottom: 6rem;
   max-width: 120vh;
 }
+
+/* Contact Page */
+
+button {
+  padding: 1rem;
+  background-color: #f50404d7;
+  color: #eee;
+  font-size: 24px;
+  font-size: clamp(16px, 4vw, 28px);
+}
+
+form {
+  padding: 10rem 2.5rem;
+  background-color: rgba(0, 0, 0, .2);
+  margin: 1rem;
+  color: #eee;
+  transition: all .5s;
+  display: flex;
+  flex-wrap: wrap;
+	gap: 20px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.contact-section {
+  padding-top: 0;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+  max-width: 120vh;
+}
+
+form label {
+  display: block;
+}
+
+form p {
+  margin: 0;
+}
+
+
 
 /* .wrapper {
   margin: 4rem;
@@ -290,6 +339,13 @@ input[type=checkbox]:checked ~ label .line-3 {
 .line-bottom {
   margin-bottom: 2rem;
 }
+
+.contact-section {
+  padding-top: 3rem;
+
+  padding-bottom: 0rem;
+}
+
 }
 
 /* Floating Circles */
