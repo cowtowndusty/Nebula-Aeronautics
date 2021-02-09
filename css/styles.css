@@ -120,6 +120,30 @@ p {
   margin-top: 5.5rem;
 }
 
+/* google map */
+
+.google-map {
+  overflow:hidden;
+  padding-bottom:100%;
+  position:relative;
+  height:0;
+}
+
+.google-map iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.google-section {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+  max-width: 120vh;
+}
+
 /* .wrapper {
   margin: 4rem;
 }
