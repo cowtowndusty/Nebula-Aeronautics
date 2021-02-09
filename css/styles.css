@@ -1,14 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  height: 100vh;
-  background-image: url(../images/pawel-nolbert-62OK9xwVA0c-unsplash-2000.jpg);
-  background-size: cover;
-  background-position: left;
-}
+/* Navbar */
 
 nav {
   display: flex;
@@ -56,7 +46,13 @@ nav ul {
   background-color: rgba(0, 204, 255, 0.473);
 }
 
+/* Main layout */
+
 body {
+  height: 100vh;
+  background-image: url(../images/pawel-nolbert-62OK9xwVA0c-unsplash-2000.jpg);
+  background-size: cover;
+  background-position: left;
   font-size: 34px;
   font-size: clamp(16px, 4vw, 38px);
   margin: 0;
@@ -70,7 +66,7 @@ main {
   justify-content: center;
 }
 
-dl {
+.hero-section {
   padding: 3em;
   max-width: 120vh;
   margin: 1em;
@@ -78,25 +74,24 @@ dl {
   border-radius: 5em;  
 }
 
-dt {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+h1 {
+  font-family: 'Raleway', MS Sans Serif, Geneva, Sans-Serif;
+  font-weight: 800;
   font-size: 1.5em;
   margin-bottom: 0.5em;
   text-align: center;
 }
 
-dd {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+p {
+  font-family: 'Open Sans', Verdana, Geneva, Sans-Serif;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.button {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+.cta-button {
+  font-family: 'Raleway', MS Sans Serif, Geneva, Sans-Serif;
+  font-weight: 800;
   text-decoration: none;
   font-size: 1em;
   margin-bottom: 0.5em;
@@ -110,17 +105,58 @@ dd {
   transition: all ease 1s;
 }
 
-.button:hover {
+.cta-button:hover {
   transform: translateY(-2px);
   box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
-  background-color: rgba(47, 0, 255, 0.801);
-
+  background-color: rgba(29, 0, 160, 0.801);
 }
 
-.button:active {
+.cta-button:active {
   transform: translateY(0);
   box-shadow: none;
 }
+
+.contact-header {
+  margin-top: 5.5rem;
+}
+
+/* .wrapper {
+  margin: 4rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.form-column {
+  height: auto;
+  margin: 6rem 12rem 6rem 12rem;
+  align-self: center;
+}
+
+.google-column {
+    height: auto;
+    align-self: center;
+
+} */
 
 /* Media Queries */
 
@@ -131,7 +167,6 @@ dd {
   }
 
 @media (max-width:792px) {
-
 input[type=checkbox] {
   display: none;
 }
@@ -231,22 +266,15 @@ input[type=checkbox]:checked ~ label .line-3 {
 .line-bottom {
   margin-bottom: 2rem;
 }
-    }
-
-* {
-  margin: 0;
-  padding: 0;
 }
+
+/* Floating Circles */
 
 html,
 body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-body {
-  background-color: #021027;
 }
 
 .container {
